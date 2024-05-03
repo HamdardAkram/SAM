@@ -1,0 +1,137 @@
+/* 
+  Localizable.strings
+  SamApp
+
+  Created by Akram on 09/02/18.
+  Copyright © 2019 Muhammad Akram. All rights reserved.
+*/
+
+"ENTER_EMAIL" = "Please enter email";
+
+"VALID_EMAIL" = "Please enter valid email";
+
+"ENTER_CLIENT" = "Please enter client name";
+
+"SIGN_IN" = "LOGIN";
+
+"REGISTER" = "REGISTER";
+
+"FORGOT_PASSWORD" = "FORGOT PASSWORD";
+
+"FEATURED_SALES_TITLE" = "SALES";
+
+"ALLSALE_VC_TITLE" = "ALL SALE";
+
+"SEARCH_VC_TITLE" = "SEARCH";
+
+"BASKET_VC_TITLE" = "BASKET";
+
+"ACCOUNT_VC_TITLE" = "ACCOUNT";
+
+"CHECKOUT_VC_TITLE" = "CHECKOUT";
+
+"DELIVERY_ADDRESS" = "Delivey Address";
+
+"BILLING_ADDRESS" = "Billing Address";
+
+"DELIVERY_OPTIONS" = "Delivery Method";
+
+"CHECKOUT_ADDRESS_VC_TITLE" = "SELECT ADDRESS";
+
+"ADD_ADDRESS_VC_TITLE" = "ADD NEW ADDRESS";
+
+"FIRST_NAME" = "First Name";
+
+"LAST_NAME" = "Last Name";
+
+"ADDRESS1" = "Address1";
+
+"ADDRESS2" = "Address2";
+
+"HOUESE_NAME" = "House Name";
+
+"CITY" = "City";
+
+"COUNTRY" = "Country";
+
+"PRODUCT_VC_TITLE" = "PRODUCTS";
+
+"REFINE_VC_TITLE" = "REFINE";
+
+"SORT_BY" = "SORT BY";
+
+"POPULARITY" = "Popularity";
+
+"NEW" = "New";
+
+"DISCOUNT" = "Discount";
+
+"HIGH_TO_LOW" = "Price: High - Low";
+
+"LOW_TO_HIGH" = "Price: Low - High";
+
+"CANCEL" = "Cancel";
+
+"PRODUCT_DETAIL_VC_TITLE" = "PRODUCT DETAIL";
+
+"HOME_VC_TITLE" = "Home";
+
+"MENU_VC_TITLE" = "SEARCH & BROWSE";
+
+"ENTER_FIRST_NAME" = "Please enter first name";
+
+"ENTER_PHONE" = "Please enter your phone number";
+
+"ENTER_ADDRESS" = "Please enter your address";
+
+"ENTER_POST_CODE" = "Please enter postal code";
+
+"ENTER_CITY" = "Please enter city name";
+
+"ENTER_COUNTRY" = "Please enter country name";
+
+"PRODUCT_INFO_VC" = "PRODUCT INFORMATION";
+
+"LOGOUT_MESSAGE" = "Are you sure you want to sign out";
+
+"SUMMARY_VC_TITLE" = "ORDER SUMMARY";
+
+"CONTINUE_PAYMENT" = "CONTINUE TO PAYMENT";
+
+"CHANGE_ADDRESS_VC_TITLE" = "CHANGE ADDRESS";
+
+"PLACE_ORDER" = "PLACE ORDER";
+
+"PROMO_VC_TITLE" = "PROMO CODE";
+
+"SEARCH_RESULT_IN" = "Search Result";
+
+"PRODUCT_DETAIL_IN" = "Product Details";
+
+"SET_PREFERENCES" = "Set Preferences";
+
+"PROFILE" = "Profile";
+
+"SCAN_PRODUCT_IN" = "Scan Product In";
+
+"BARCODE" = "Scan Barcode";
+
+"SCAN_PRODUCT" = "Scan Product";
+
+"REPORTS" = "Reports";
+
+"PRODUCT_DETAILS" = "Product Details";
+
+"PRODUCT_INFO" = "Products Information";
+
+"ADD_SESSION" = "Add Session";
+
+"SESSION_DETAIL" = "Session Details";
+
+"COPYWRITING" = "Copywriting";
+
+"EDIT_SESSION" = "Edit Session";
+
+"REGISTER" = "Register";
+
+"ACCOUNT_DETAIL" = "Account Detail";

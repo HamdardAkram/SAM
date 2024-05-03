@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tWc-B6-fBY">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="b1g-NO-hT9" customClass="HomeViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UVY-dd-ExZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-NW-DBC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oqq-zS-XCD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b1g-NO-hT9" id="uWp-7u-JM7"/>
+                                    <outlet property="delegate" destination="b1g-NO-hT9" id="F0y-vv-H2q"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e6z-CP-CAL" firstAttribute="bottom" secondItem="ixG-NW-DBC" secondAttribute="bottom" id="5eA-ho-hOV"/>
+                            <constraint firstItem="ixG-NW-DBC" firstAttribute="top" secondItem="e6z-CP-CAL" secondAttribute="top" id="7AO-F6-y27"/>
+                            <constraint firstItem="e6z-CP-CAL" firstAttribute="trailing" secondItem="ixG-NW-DBC" secondAttribute="trailing" id="IRQ-HO-VuS"/>
+                            <constraint firstItem="ixG-NW-DBC" firstAttribute="leading" secondItem="e6z-CP-CAL" secondAttribute="leading" id="r6Q-mV-m47"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6z-CP-CAL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6IU-Io-i2d">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bYP-BZ-Wac"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <connections>
+                        <outlet property="collectionLayout" destination="Oqq-zS-XCD" id="Zg2-8X-p5C"/>
+                        <outlet property="homeCollectionView" destination="ixG-NW-DBC" id="chX-et-dL9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12L-Ut-3WE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="86"/>
+        </scene>
+        <!--Barcode View Controller-->
+        <scene sceneID="0rO-Wj-shc">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeViewController" id="mhw-5t-hdo" customClass="BarcodeViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ngf-7u-Vkp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9eR-dQ-1pe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mhw-5t-hdo" id="wcf-WH-Cr8"/>
+                                    <outlet property="delegate" destination="mhw-5t-hdo" id="b96-V8-dbK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D4o-Bn-TKY" firstAttribute="bottom" secondItem="9eR-dQ-1pe" secondAttribute="bottom" id="LhC-rd-Z2z"/>
+                            <constraint firstItem="9eR-dQ-1pe" firstAttribute="leading" secondItem="D4o-Bn-TKY" secondAttribute="leading" id="aPO-gg-QC2"/>
+                            <constraint firstItem="9eR-dQ-1pe" firstAttribute="top" secondItem="D4o-Bn-TKY" secondAttribute="top" id="gmf-Id-lbY"/>
+                            <constraint firstItem="D4o-Bn-TKY" firstAttribute="trailing" secondItem="9eR-dQ-1pe" secondAttribute="trailing" id="sw2-8k-uhg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D4o-Bn-TKY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fM6-07-FcA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="u6D-0A-Eeo"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="barcodeTableView" destination="9eR-dQ-1pe" id="b0g-GQ-ZzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDc-mz-QEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="88"/>
+        </scene>
+        <!--Barcode Reader View Controller-->
+        <scene sceneID="GFs-ac-0t2">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeReaderViewController" id="gMb-gl-S5F" customClass="BarcodeReaderViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Eg-xF-B0t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cdU-kV-MDY"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="2Eg-xF-B0t" id="5gm-ty-Gkb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6F2-1Q-YNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="90"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="XUq-Ar-pj8">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="rEv-K3-SmQ" customClass="ProfileViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8VH-hA-fsp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-ch-c5e">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rEv-K3-SmQ" id="4fp-I6-8ei"/>
+                                    <outlet property="delegate" destination="rEv-K3-SmQ" id="cPS-KC-crB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vlE-ch-c5e" firstAttribute="leading" secondItem="6V5-Yv-KZ7" secondAttribute="leading" id="LeW-hS-cN5"/>
+                            <constraint firstItem="vlE-ch-c5e" firstAttribute="top" secondItem="6V5-Yv-KZ7" secondAttribute="top" id="f7S-f2-vgX"/>
+                            <constraint firstItem="6V5-Yv-KZ7" firstAttribute="bottom" secondItem="vlE-ch-c5e" secondAttribute="bottom" id="nqh-sH-SgR"/>
+                            <constraint firstItem="6V5-Yv-KZ7" firstAttribute="trailing" secondItem="vlE-ch-c5e" secondAttribute="trailing" id="pL1-Ss-crk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6V5-Yv-KZ7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LDZ-Gb-FfZ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7ag-Ew-991"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileTableView" destination="vlE-ch-c5e" id="A6y-Xa-mGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3CG-4g-Phm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2275.36231884058" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+</document>

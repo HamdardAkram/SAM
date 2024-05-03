@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qIb-xh-v7X" customClass="SectionFooterView" customModule="SamApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3d-3Z-jeR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cw-Vn-7xr">
+                            <rect key="frame" x="16" y="16" width="110" height="32"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="CC9-cg-0EX"/>
+                                <constraint firstAttribute="height" constant="32" id="YRZ-Um-77a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonClicked:" destination="qIb-xh-v7X" eventType="touchUpInside" id="dju-6X-Agb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dks-4f-eUA">
+                            <rect key="frame" x="368" y="16" width="30" height="30"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="13"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.93333333330000001" green="0.48627450979999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="viewMoreButtonClicked:" destination="qIb-xh-v7X" eventType="touchUpInside" id="Gna-j8-vse"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Dks-4f-eUA" secondAttribute="trailing" constant="16" id="0ug-8c-SKf"/>
+                        <constraint firstItem="4cw-Vn-7xr" firstAttribute="top" secondItem="a3d-3Z-jeR" secondAttribute="top" constant="16" id="Vi4-xL-3HC"/>
+                        <constraint firstItem="4cw-Vn-7xr" firstAttribute="leading" secondItem="a3d-3Z-jeR" secondAttribute="leading" constant="16" id="g6h-zm-9W3"/>
+                        <constraint firstItem="Dks-4f-eUA" firstAttribute="top" secondItem="4cw-Vn-7xr" secondAttribute="top" id="vtp-YR-Vcq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="a3d-3Z-jeR" firstAttribute="leading" secondItem="zOr-Nq-Ux6" secondAttribute="leading" id="2UM-sG-7aW"/>
+                <constraint firstItem="a3d-3Z-jeR" firstAttribute="top" secondItem="qIb-xh-v7X" secondAttribute="top" id="DXZ-rF-QhC"/>
+                <constraint firstItem="zOr-Nq-Ux6" firstAttribute="trailing" secondItem="a3d-3Z-jeR" secondAttribute="trailing" id="ng5-gg-lzW"/>
+                <constraint firstAttribute="bottom" secondItem="a3d-3Z-jeR" secondAttribute="bottom" constant="10" id="rrO-iM-wLh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="zOr-Nq-Ux6"/>
+            <connections>
+                <outlet property="addButton" destination="4cw-Vn-7xr" id="HFA-MO-QWc"/>
+                <outlet property="viewMoreButton" destination="Dks-4f-eUA" id="bvP-2B-lAm"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-175.11160714285714"/>
+        </view>
+    </objects>
+</document>

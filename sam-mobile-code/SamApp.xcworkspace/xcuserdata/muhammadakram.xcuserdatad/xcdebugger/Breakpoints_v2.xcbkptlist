@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "710E3670-E5DF-4480-9E75-10CAD5A4B05A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B55FFA51-09B8-488F-ABD9-DEA7DA825C3C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/Views/ProductDetail/EditSession/EditSessionCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "datePickerValueChanged(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B55FFA51-09B8-488F-ABD9-DEA7DA825C3C - 9f7c42393da2ac9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.EditSessionCell.datePickerValueChanged(Any) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/Views/ProductDetail/EditSession/EditSessionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "B55FFA51-09B8-488F-ABD9-DEA7DA825C3C - 9f7c42393da2ac9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.EditSessionCell.datePickerValueChanged(Any) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/Views/ProductDetail/EditSession/EditSessionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F579A846-1DBA-436E-BC1D-AA492D84E657"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "saveButtonClicked()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F579A846-1DBA-436E-BC1D-AA492D84E657 - 1c32ec59d3cd06ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.AccountDetailViewController.saveButtonClicked() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "3888">
+               </Location>
+               <Location
+                  uuid = "F579A846-1DBA-436E-BC1D-AA492D84E657 - 1c32ec59d3cd06ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.AccountDetailViewController.saveButtonClicked() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "3768">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F464501-4B41-4482-82CD-9B0C37C2F44A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "saveButtonClicked()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6F464501-4B41-4482-82CD-9B0C37C2F44A - 1c32ec59d3cd01f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.AccountDetailViewController.saveButtonClicked() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1604">
+               </Location>
+               <Location
+                  uuid = "6F464501-4B41-4482-82CD-9B0C37C2F44A - 1c32ec59d3cd01f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.AccountDetailViewController.saveButtonClicked() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F443E10-F7DF-42F3-A270-BA995A36FC68"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "saveButtonClicked()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F443E10-F7DF-42F3-A270-BA995A36FC68 - 1c32ec59d3cd009e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.AccountDetailViewController.saveButtonClicked() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1164">
+               </Location>
+               <Location
+                  uuid = "3F443E10-F7DF-42F3-A270-BA995A36FC68 - 1c32ec59d3cd009e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.AccountDetailViewController.saveButtonClicked() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/Profile/AccountDetail/AccountDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D75996F-DAFA-47C0-9384-2CAFBA5E61E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ScanVC/ScanDetailVC/ScannedProductDetailInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "searchProduct(productInfo:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56FCD9EE-AAD6-4250-8B8E-10C7A58F530B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Alamofire/Source/AFError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "687"
+            endingLineNumber = "687"
+            landmarkName = "localizedDescription"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC8E849E-0107-4B40-B76D-A1EAEC174ECE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ScanVC/ScanInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "scanForWrongProduct(productInfo:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "684AB1E5-91A3-4125-8DD6-C4A44612ADB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Alamofire/Source/Session.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "853"
+            endingLineNumber = "853"
+            landmarkName = "perform(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "684AB1E5-91A3-4125-8DD6-C4A44612ADB0 - 470336bb2b38a8c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in Alamofire.Session.perform(Alamofire.DownloadRequest) -&gt; ()"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/Pods/Alamofire/Source/Session.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "853"
+                  endingLineNumber = "853"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "684AB1E5-91A3-4125-8DD6-C4A44612ADB0 - 470336bb2b38a8c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in Alamofire.Session.perform(Alamofire.DownloadRequest) -&gt; ()"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/Pods/Alamofire/Source/Session.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "853"
+                  endingLineNumber = "853"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BEEF8FA0-545C-4D72-8144-75C0C2C690B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/Helpers/LocalHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "fetchToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7BCF784-444D-431E-9C27-85AC499C3C8C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "updatePassword(withUserInfo:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29A9CF23-4952-4D72-A662-418000C56585"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "updatePassword(withUserInfo:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29A9CF23-4952-4D72-A662-418000C56585 - 4122048c9280eee1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotInteractor.updatePassword(withUserInfo: Swift.Dictionary&lt;Swift.String, Any&gt;, success: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), failure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "29A9CF23-4952-4D72-A662-418000C56585 - 926d645d47951024"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; () in SAM3App.ForgotInteractor.updatePassword(withUserInfo: Swift.Dictionary&lt;Swift.String, Any&gt;, success: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), failure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFAEFDF4-B51F-48AD-A8FE-59DC67A69F4F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "updatePassword(withUserInfo:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68584161-217E-4153-8131-0D4960B0FAC1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "onSendResetLinkClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68584161-217E-4153-8131-0D4960B0FAC1 - b54f314372018f6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotPasswordViewController.onSendResetLinkClick(Any) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2824">
+               </Location>
+               <Location
+                  uuid = "68584161-217E-4153-8131-0D4960B0FAC1 - b54f314372018c8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotPasswordViewController.onSendResetLinkClick(Any) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2364">
+               </Location>
+               <Location
+                  uuid = "68584161-217E-4153-8131-0D4960B0FAC1 - b54f314372018c8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotPasswordViewController.onSendResetLinkClick(Any) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C82BD772-2EC1-47A2-A512-A4F1241370D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "showResetPopup()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C82BD772-2EC1-47A2-A512-A4F1241370D4 - 6951363d0869b968"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in SAM3App.ForgotPasswordViewController.showResetPopup() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "C82BD772-2EC1-47A2-A512-A4F1241370D4 - 58c21ab74f95a39c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotPasswordViewController.showResetPopup() -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07EE304A-311A-4663-8BDA-F1EEF315B0C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "resetPassword(withUserInfo:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10861FA9-D403-41C3-8D8C-3A6FDCE0D805"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "resetPassword(withUserInfo:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F94B1AFD-323A-4B26-883D-58CB8C631B41"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "updatePasswordDone(json:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F94B1AFD-323A-4B26-883D-58CB8C631B41 - 8cc61f9fbf7bb3fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotPasswordViewController.updatePasswordDone(json: Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "F94B1AFD-323A-4B26-883D-58CB8C631B41 - 728a614df8009309"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAM3App.ForgotPasswordViewController.showActivityIndicator(withMessage: Swift.String) -&gt; ()"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/ViewControllers/ForgotVC/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81290F95-A68F-4E1E-9443-425618A9A697"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/Models/Product/Product.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "588"
+            endingLineNumber = "588"
+            landmarkName = "decodeDynamicKeyValues()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "81290F95-A68F-4E1E-9443-425618A9A697 - 8ede0725a9973093"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.KeyedDecodingContainer&lt; where &#x3c4;_0_0 == SAM3App.DynamicKey&gt;.decodeDynamicKeyValues() -&gt; Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/Models/Product/Product.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "588"
+                  endingLineNumber = "588"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "81290F95-A68F-4E1E-9443-425618A9A697 - 8ede0725a9973093"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.KeyedDecodingContainer&lt; where &#x3c4;_0_0 == SAM3App.DynamicKey&gt;.decodeDynamicKeyValues() -&gt; Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "SAM3App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadakram/Downloads/sam-mobile-code/SamApp/Models/Product/Product.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "588"
+                  endingLineNumber = "588"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28539B6C-DE70-4B71-AB9A-0F80C776CCBB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/Models/Product/Product.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "565"
+            endingLineNumber = "565"
+            landmarkName = "encodeDynamicKeyValues(withDictionary:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A45DFB22-A72B-4BC1-AC90-FDDCD73F8CD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ScanVC/BarcodeReaderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "474"
+            endingLineNumber = "474"
+            landmarkName = "productDetailStatus(productDetail:message:isValid:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5CA485E-5E51-45DE-9B9A-508B577C148E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/ViewControllers/ScanVC/BarcodeReaderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "477"
+            endingLineNumber = "477"
+            landmarkName = "productDetailStatus(productDetail:message:isValid:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A532CB7-D691-4CBE-B7BA-3094A1A8A066"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SamApp/Utils/ToolbarPickerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "cancelTapped()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

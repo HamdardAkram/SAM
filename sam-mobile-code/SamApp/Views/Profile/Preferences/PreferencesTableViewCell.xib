@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+        <array key="TofinoMedium.ttf">
+            <string>Tofino-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="PreferencesTableViewCell" customModule="SamApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MM-MC-KxG">
+                        <rect key="frame" x="0.0" y="10" width="320" height="44"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-7w-ped">
+                                <rect key="frame" x="8" y="0.0" width="304" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SQ3-R1-5Ha">
+                                        <rect key="frame" x="8" y="7" width="266" height="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="zKv-DS-3Rt"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Wi4-LP-I1a">
+                                        <rect key="frame" x="284" y="19" width="10" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="Ie4-cW-LTD"/>
+                                            <constraint firstAttribute="height" constant="6" id="SGn-E4-n2o"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SQ3-R1-5Ha" firstAttribute="leading" secondItem="7W8-7w-ped" secondAttribute="leading" constant="8" id="F9c-of-hDq"/>
+                                    <constraint firstAttribute="trailing" secondItem="SQ3-R1-5Ha" secondAttribute="trailing" constant="30" id="Lx2-Mr-cjW"/>
+                                    <constraint firstItem="Wi4-LP-I1a" firstAttribute="centerY" secondItem="7W8-7w-ped" secondAttribute="centerY" id="bVF-LB-ROE"/>
+                                    <constraint firstAttribute="bottom" secondItem="SQ3-R1-5Ha" secondAttribute="bottom" constant="7" id="gFO-Cx-va2"/>
+                                    <constraint firstItem="SQ3-R1-5Ha" firstAttribute="top" secondItem="7W8-7w-ped" secondAttribute="top" constant="7" id="n07-zv-rMN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wi4-LP-I1a" secondAttribute="trailing" constant="10" id="q3t-2M-tfq"/>
+                                    <constraint firstAttribute="height" constant="44" id="yE3-ZE-WOW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxN-2n-N0p">
+                                <rect key="frame" x="8" y="0.0" width="304" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRI-ed-hcL">
+                                        <rect key="frame" x="8" y="12.5" width="130" height="19.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="cp3-DE-wFb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tofino-Medium" family="Tofino" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lX-Xd-He2" customClass="DLRadioButton">
+                                        <rect key="frame" x="184" y="6" width="50" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4vO-uY-xM5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="i04-vw-pX2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8av-eE-38l" customClass="DLRadioButton">
+                                        <rect key="frame" x="244" y="6" width="50" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="sVC-dq-bit"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4PH-Rn-LzD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4bi-pX-XK2"/>
+                                    <constraint firstItem="PRI-ed-hcL" firstAttribute="centerY" secondItem="IxN-2n-N0p" secondAttribute="centerY" id="Ink-08-fJz"/>
+                                    <constraint firstItem="8av-eE-38l" firstAttribute="leading" secondItem="7lX-Xd-He2" secondAttribute="trailing" constant="10" id="N0H-0W-2oq"/>
+                                    <constraint firstItem="7lX-Xd-He2" firstAttribute="centerY" secondItem="IxN-2n-N0p" secondAttribute="centerY" id="hA7-Um-ZMf"/>
+                                    <constraint firstItem="8av-eE-38l" firstAttribute="centerY" secondItem="IxN-2n-N0p" secondAttribute="centerY" id="iZc-ne-Mqv"/>
+                                    <constraint firstItem="PRI-ed-hcL" firstAttribute="leading" secondItem="IxN-2n-N0p" secondAttribute="leading" constant="8" id="lS4-ZQ-BTq"/>
+                                    <constraint firstAttribute="trailing" secondItem="8av-eE-38l" secondAttribute="trailing" constant="10" id="sck-As-GQC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7W8-7w-ped" secondAttribute="trailing" constant="8" id="4ni-Xu-w3f"/>
+                            <constraint firstAttribute="trailing" secondItem="IxN-2n-N0p" secondAttribute="trailing" constant="8" id="FRn-B3-c1t"/>
+                            <constraint firstItem="7W8-7w-ped" firstAttribute="leading" secondItem="0MM-MC-KxG" secondAttribute="leading" constant="8" id="Tlr-it-0It"/>
+                            <constraint firstAttribute="bottom" secondItem="7W8-7w-ped" secondAttribute="bottom" id="a9r-Fc-uCX"/>
+                            <constraint firstItem="7W8-7w-ped" firstAttribute="top" secondItem="0MM-MC-KxG" secondAttribute="top" id="deH-8k-RFX"/>
+                            <constraint firstItem="IxN-2n-N0p" firstAttribute="top" secondItem="0MM-MC-KxG" secondAttribute="top" id="hhP-nE-5te"/>
+                            <constraint firstItem="IxN-2n-N0p" firstAttribute="leading" secondItem="0MM-MC-KxG" secondAttribute="leading" constant="8" id="tzd-og-PwD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="0MM-MC-KxG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Vi7-NN-8DK"/>
+                    <constraint firstAttribute="bottom" secondItem="0MM-MC-KxG" secondAttribute="bottom" id="jn6-m4-phD"/>
+                    <constraint firstItem="0MM-MC-KxG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kNw-0M-8Zn"/>
+                    <constraint firstAttribute="trailing" secondItem="0MM-MC-KxG" secondAttribute="trailing" id="r2e-KG-WnB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dropDownIcon" destination="Wi4-LP-I1a" id="rbv-sy-avF"/>
+                <outlet property="fieldInputView" destination="7W8-7w-ped" id="AhY-xI-sp4"/>
+                <outlet property="inputTextField" destination="SQ3-R1-5Ha" id="gNY-0R-EV8"/>
+                <outlet property="inputViewHeightConstraint" destination="yE3-ZE-WOW" id="4Xe-uP-XsE"/>
+                <outlet property="nameLabel" destination="PRI-ed-hcL" id="Zl0-Sp-j5X"/>
+                <outlet property="noButton" destination="8av-eE-38l" id="o1m-Wq-Kza"/>
+                <outlet property="radioInputView" destination="IxN-2n-N0p" id="3jV-ja-DV9"/>
+                <outlet property="radioiViewHeightConstraint" destination="4bi-pX-XK2" id="gq1-yX-2fy"/>
+                <outlet property="yesButton" destination="7lX-Xd-He2" id="Ei4-pU-zoB"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="drop_icon" width="10" height="6"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Font Awesome 5 Pro-Light-300.otf">
+            <string>FontAwesome5ProLight</string>
+        </array>
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+        <array key="TofinoMedium.ttf">
+            <string>Tofino-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchResultCollectionViewCell" id="gTV-IL-0wX" customClass="SearchResultCollectionViewCell" customModule="SamApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hp2-lj-RxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98106583420" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-Cc-yk1">
+                                <rect key="frame" x="10" y="15" width="98" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE KOOPLES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JR5-Z3-hni">
+                                <rect key="frame" x="10" y="37.5" width="85" height="18"/>
+                                <fontDescription key="fontDescription" name="Tofino-Medium" family="Tofino" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESA-hA-ZEW">
+                                <rect key="frame" x="345" y="27" width="20" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bYf-gy-ZBl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome5ProLight" family="Font Awesome 5 Pro" pointSize="15"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Womenswear" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-Zr-19L">
+                                <rect key="frame" x="241" y="24.5" width="99" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-uL-G9J">
+                                <rect key="frame" x="0.0" y="68.5" width="375" height="0.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="w4L-Lu-1bt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cdW-Cc-yk1" firstAttribute="leading" secondItem="Hp2-lj-RxZ" secondAttribute="leading" constant="10" id="0d3-Ez-zdJ"/>
+                            <constraint firstItem="cdW-Cc-yk1" firstAttribute="top" secondItem="Hp2-lj-RxZ" secondAttribute="top" constant="15" id="3Rg-E2-xcm"/>
+                            <constraint firstItem="ESA-hA-ZEW" firstAttribute="centerY" secondItem="Hp2-lj-RxZ" secondAttribute="centerY" id="BW1-97-UgL"/>
+                            <constraint firstItem="ESA-hA-ZEW" firstAttribute="leading" secondItem="W9x-Zr-19L" secondAttribute="trailing" constant="5" id="COw-Ot-zpf"/>
+                            <constraint firstItem="W9x-Zr-19L" firstAttribute="centerY" secondItem="Hp2-lj-RxZ" secondAttribute="centerY" id="D25-8G-n11"/>
+                            <constraint firstItem="NLN-uL-G9J" firstAttribute="leading" secondItem="Hp2-lj-RxZ" secondAttribute="leading" id="GQi-Te-Bpz"/>
+                            <constraint firstAttribute="trailing" secondItem="NLN-uL-G9J" secondAttribute="trailing" id="Lh3-9g-4OM"/>
+                            <constraint firstItem="JR5-Z3-hni" firstAttribute="leading" secondItem="cdW-Cc-yk1" secondAttribute="leading" id="pKT-22-Hcl"/>
+                            <constraint firstAttribute="trailing" secondItem="ESA-hA-ZEW" secondAttribute="trailing" constant="10" id="tPg-b8-Haf"/>
+                            <constraint firstItem="JR5-Z3-hni" firstAttribute="top" secondItem="cdW-Cc-yk1" secondAttribute="bottom" constant="2" id="ufC-BZ-kVy"/>
+                            <constraint firstAttribute="bottom" secondItem="NLN-uL-G9J" secondAttribute="bottom" id="umX-R1-yTx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Hp2-lj-RxZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6IZ-a3-Go7"/>
+                <constraint firstAttribute="bottom" secondItem="Hp2-lj-RxZ" secondAttribute="bottom" constant="1" id="C4y-0h-Jke"/>
+                <constraint firstItem="Hp2-lj-RxZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Va9-Lm-qRV"/>
+                <constraint firstAttribute="trailing" secondItem="Hp2-lj-RxZ" secondAttribute="trailing" id="z4d-uR-cF5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="321" height="70"/>
+            <connections>
+                <outlet property="categoryLabel" destination="W9x-Zr-19L" id="6Tc-1G-EKq"/>
+                <outlet property="descLabel" destination="JR5-Z3-hni" id="vYV-4r-wnz"/>
+                <outlet property="titleLabel" destination="cdW-Cc-yk1" id="idi-B4-jPa"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="145.3125"/>
+        </collectionViewCell>
+    </objects>
+</document>

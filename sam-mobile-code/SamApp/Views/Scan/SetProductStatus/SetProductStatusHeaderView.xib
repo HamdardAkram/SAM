@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+        <array key="TofinoMedium.ttf">
+            <string>Tofino-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cOs-Mv-FIK" customClass="SetProductStatusHeaderView" customModule="SAM3App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="356"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNP-78-ED6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="346"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET PRODUCT STATUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oN-A5-KGk">
+                            <rect key="frame" x="16" y="12" width="382" height="14"/>
+                            <fontDescription key="fontDescription" name="Tofino-Medium" family="Tofino" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" alpha="0.59999999999999998" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l60-E0-aga" customClass="DLRadioButton">
+                            <rect key="frame" x="16" y="38" width="159" height="29"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                            <state key="normal" title="Products are damaged    ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="optionClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="Rs8-Bb-0i4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwF-VI-zCH" customClass="DLRadioButton">
+                            <rect key="frame" x="16" y="77" width="162" height="29"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                            <state key="normal" title="Products in wrong size     ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="optionClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="wty-F6-CyG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mur-SO-RjC" customClass="DLRadioButton">
+                            <rect key="frame" x="16" y="116" width="236" height="29"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                            <state key="normal" title="Products requested to be returned     ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="optionClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="vun-QM-hOI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbB-pX-B5v" customClass="DLRadioButton">
+                            <rect key="frame" x="16" y="155" width="171" height="29"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                            <state key="normal" title="Products held for model     ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="optionClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="OCK-o3-wnx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izq-b2-6mm" customClass="DLRadioButton">
+                            <rect key="frame" x="16" y="194" width="169" height="29"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                            <state key="normal" title="Products in wrong color     ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="optionClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="hSi-KR-TdM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Htc-o3-bGT" customClass="DLRadioButton">
+                            <rect key="frame" x="16" y="233" width="62" height="29"/>
+                            <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                            <state key="normal" title="Others     ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="optionClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="2Az-Kc-gr6"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stc-oh-bki">
+                            <rect key="frame" x="110" y="228" width="288" height="32"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-cD-ewr">
+                                    <rect key="frame" x="10" y="3" width="268" height="26"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="cOs-Mv-FIK" id="93f-7V-2aR"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="TUE-cD-ewr" secondAttribute="trailing" constant="10" id="33c-c5-WeP"/>
+                                <constraint firstAttribute="bottom" secondItem="TUE-cD-ewr" secondAttribute="bottom" constant="3" id="4Sr-Rd-R1h"/>
+                                <constraint firstItem="TUE-cD-ewr" firstAttribute="leading" secondItem="stc-oh-bki" secondAttribute="leading" constant="10" id="HsL-bj-Miv"/>
+                                <constraint firstAttribute="height" constant="32" id="d8w-Zj-hX4"/>
+                                <constraint firstItem="TUE-cD-ewr" firstAttribute="top" secondItem="stc-oh-bki" secondAttribute="top" constant="3" id="hUE-9p-V3U"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39z-bn-QZe">
+                            <rect key="frame" x="93" y="296" width="228" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="228" id="5Oo-2q-j4w"/>
+                                <constraint firstAttribute="height" constant="44" id="Jzu-Tn-rkY"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="170" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Scan Product" image="barcode_icon">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="scanButtonClicked:" destination="cOs-Mv-FIK" eventType="touchUpInside" id="CTU-RC-w7E"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ik-oy-BCl">
+                            <rect key="frame" x="175" y="47.5" width="10" height="10"/>
+                            <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="az7-GN-Qdn"/>
+                                <constraint firstAttribute="width" constant="10" id="qBE-oN-2Hk"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vf-h8-jdu">
+                            <rect key="frame" x="178" y="86.5" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.18431372549019609" green="0.50196078431372548" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="brO-jF-BAY"/>
+                                <constraint firstAttribute="width" constant="10" id="g0L-s3-7rc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a94-vL-rH3">
+                            <rect key="frame" x="252" y="125.5" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.48627450980392156" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="U2g-Sw-SHY"/>
+                                <constraint firstAttribute="width" constant="10" id="if0-Pw-4wt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTQ-4I-IFr">
+                            <rect key="frame" x="187" y="164.5" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="5CQ-gT-BbK"/>
+                                <constraint firstAttribute="height" constant="10" id="Snf-w6-PzZ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYY-By-CCU">
+                            <rect key="frame" x="185" y="203.5" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="G9j-bU-8kM"/>
+                                <constraint firstAttribute="height" constant="10" id="Yyz-8W-cXl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20u-ha-Iye">
+                            <rect key="frame" x="78" y="242.5" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.51764705882352935" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="kg6-cI-qJN"/>
+                                <constraint firstAttribute="width" constant="10" id="q1Y-Nb-3ea"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Htc-o3-bGT" firstAttribute="leading" secondItem="l60-E0-aga" secondAttribute="leading" id="096-uU-zpv"/>
+                        <constraint firstItem="mur-SO-RjC" firstAttribute="leading" secondItem="l60-E0-aga" secondAttribute="leading" id="5mx-gZ-Nys"/>
+                        <constraint firstItem="Htc-o3-bGT" firstAttribute="top" secondItem="izq-b2-6mm" secondAttribute="bottom" constant="10" id="8Tu-JI-daa"/>
+                        <constraint firstItem="1vf-h8-jdu" firstAttribute="centerY" secondItem="wwF-VI-zCH" secondAttribute="centerY" id="Api-R7-iLv"/>
+                        <constraint firstItem="xbB-pX-B5v" firstAttribute="leading" secondItem="l60-E0-aga" secondAttribute="leading" id="F9n-vV-0gQ"/>
+                        <constraint firstItem="a94-vL-rH3" firstAttribute="leading" secondItem="mur-SO-RjC" secondAttribute="trailing" id="Gem-oh-IgE"/>
+                        <constraint firstItem="39z-bn-QZe" firstAttribute="top" secondItem="stc-oh-bki" secondAttribute="bottom" constant="36" id="Gsd-wt-rqP"/>
+                        <constraint firstAttribute="trailing" secondItem="stc-oh-bki" secondAttribute="trailing" constant="16" id="IIZ-Lg-Odp"/>
+                        <constraint firstItem="stc-oh-bki" firstAttribute="top" secondItem="izq-b2-6mm" secondAttribute="bottom" constant="5" id="Isy-5P-MNb"/>
+                        <constraint firstItem="7ik-oy-BCl" firstAttribute="centerY" secondItem="l60-E0-aga" secondAttribute="centerY" id="JjE-sb-bja"/>
+                        <constraint firstItem="4oN-A5-KGk" firstAttribute="top" secondItem="cNP-78-ED6" secondAttribute="top" constant="12" id="KGt-KT-0LN"/>
+                        <constraint firstItem="jTQ-4I-IFr" firstAttribute="leading" secondItem="xbB-pX-B5v" secondAttribute="trailing" id="O6U-F7-S0Y"/>
+                        <constraint firstItem="izq-b2-6mm" firstAttribute="leading" secondItem="l60-E0-aga" secondAttribute="leading" id="RGa-Gh-wr8"/>
+                        <constraint firstItem="mur-SO-RjC" firstAttribute="top" secondItem="wwF-VI-zCH" secondAttribute="bottom" constant="10" id="Us1-w0-06b"/>
+                        <constraint firstItem="jTQ-4I-IFr" firstAttribute="centerY" secondItem="xbB-pX-B5v" secondAttribute="centerY" id="UxX-A3-BoZ"/>
+                        <constraint firstItem="20u-ha-Iye" firstAttribute="centerY" secondItem="Htc-o3-bGT" secondAttribute="centerY" id="XD1-25-8bk"/>
+                        <constraint firstItem="KYY-By-CCU" firstAttribute="centerY" secondItem="izq-b2-6mm" secondAttribute="centerY" id="YRz-wS-cDf"/>
+                        <constraint firstItem="1vf-h8-jdu" firstAttribute="leading" secondItem="wwF-VI-zCH" secondAttribute="trailing" id="dUv-jl-arV"/>
+                        <constraint firstItem="39z-bn-QZe" firstAttribute="centerX" secondItem="cNP-78-ED6" secondAttribute="centerX" id="ewk-Fu-ywF"/>
+                        <constraint firstItem="4oN-A5-KGk" firstAttribute="leading" secondItem="cNP-78-ED6" secondAttribute="leading" constant="16" id="fJS-8r-chm"/>
+                        <constraint firstItem="7ik-oy-BCl" firstAttribute="leading" secondItem="l60-E0-aga" secondAttribute="trailing" id="flq-dd-dQy"/>
+                        <constraint firstItem="l60-E0-aga" firstAttribute="top" secondItem="4oN-A5-KGk" secondAttribute="bottom" constant="12" id="gMH-nP-Dct"/>
+                        <constraint firstItem="a94-vL-rH3" firstAttribute="centerY" secondItem="mur-SO-RjC" secondAttribute="centerY" id="l75-9X-4Rf"/>
+                        <constraint firstItem="l60-E0-aga" firstAttribute="leading" secondItem="4oN-A5-KGk" secondAttribute="leading" id="nEY-dL-XnY"/>
+                        <constraint firstItem="xbB-pX-B5v" firstAttribute="top" secondItem="mur-SO-RjC" secondAttribute="bottom" constant="10" id="q1X-RM-zMU"/>
+                        <constraint firstAttribute="trailing" secondItem="4oN-A5-KGk" secondAttribute="trailing" constant="16" id="rYF-aS-WbI"/>
+                        <constraint firstItem="KYY-By-CCU" firstAttribute="leading" secondItem="izq-b2-6mm" secondAttribute="trailing" id="tb4-k9-6uM"/>
+                        <constraint firstItem="20u-ha-Iye" firstAttribute="leading" secondItem="Htc-o3-bGT" secondAttribute="trailing" id="uHa-wx-4EY"/>
+                        <constraint firstItem="wwF-VI-zCH" firstAttribute="leading" secondItem="l60-E0-aga" secondAttribute="leading" id="v0h-fW-6M2"/>
+                        <constraint firstItem="izq-b2-6mm" firstAttribute="top" secondItem="xbB-pX-B5v" secondAttribute="bottom" constant="10" id="wdH-ND-u5n"/>
+                        <constraint firstItem="stc-oh-bki" firstAttribute="leading" secondItem="cNP-78-ED6" secondAttribute="leading" constant="110" id="yzI-da-U74"/>
+                        <constraint firstItem="wwF-VI-zCH" firstAttribute="top" secondItem="l60-E0-aga" secondAttribute="bottom" constant="10" id="zsc-3y-a5z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KNn-Rh-TP4" firstAttribute="trailing" secondItem="cNP-78-ED6" secondAttribute="trailing" id="NlF-h5-Sxc"/>
+                <constraint firstAttribute="bottom" secondItem="cNP-78-ED6" secondAttribute="bottom" constant="10" id="avS-nl-8gS"/>
+                <constraint firstItem="cNP-78-ED6" firstAttribute="leading" secondItem="KNn-Rh-TP4" secondAttribute="leading" id="oCk-q1-MkO"/>
+                <constraint firstItem="cNP-78-ED6" firstAttribute="top" secondItem="cOs-Mv-FIK" secondAttribute="top" id="ygx-ju-tG8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="KNn-Rh-TP4"/>
+            <connections>
+                <outlet property="damageButton" destination="l60-E0-aga" id="GaP-63-LFA"/>
+                <outlet property="damageIndicator" destination="7ik-oy-BCl" id="hLH-uf-odo"/>
+                <outlet property="heldForModelButton" destination="xbB-pX-B5v" id="E27-k8-fb8"/>
+                <outlet property="heldForModelIndicator" destination="jTQ-4I-IFr" id="HtK-Kw-WdN"/>
+                <outlet property="otherButton" destination="Htc-o3-bGT" id="g2g-SY-lGz"/>
+                <outlet property="otherIndicator" destination="20u-ha-Iye" id="llv-bx-U1k"/>
+                <outlet property="otherTextField" destination="TUE-cD-ewr" id="XFI-OS-qbf"/>
+                <outlet property="otherView" destination="stc-oh-bki" id="jge-Fx-Sfa"/>
+                <outlet property="requestIndicator" destination="a94-vL-rH3" id="pDo-rN-o0F"/>
+                <outlet property="requestToReturnButton" destination="mur-SO-RjC" id="uSE-x4-eQj"/>
+                <outlet property="scanButton" destination="39z-bn-QZe" id="hhB-9G-7lw"/>
+                <outlet property="wrongColorButton" destination="izq-b2-6mm" id="4pS-M2-EHo"/>
+                <outlet property="wrongColorIndicator" destination="KYY-By-CCU" id="MSt-HO-O1L"/>
+                <outlet property="wrongSizeButton" destination="wwF-VI-zCH" id="jlk-0z-d9K"/>
+                <outlet property="wrongSizeIndicator" destination="1vf-h8-jdu" id="8KL-wS-YQv"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="-72.321428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barcode_icon" width="31.5" height="24.5"/>
+    </resources>
+</document>

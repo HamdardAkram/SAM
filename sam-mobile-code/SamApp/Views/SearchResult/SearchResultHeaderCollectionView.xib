@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TofinoMedium.ttf">
+            <string>Tofino-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchResultHeaderCollectionView" id="U6b-Vx-4bR" customClass="SearchResultHeaderCollectionView" customModule="SamApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87n-U2-fbd">
+                    <rect key="frame" x="0.0" y="10" width="320" height="77.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5068, Items found" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y3-lZ-InM">
+                            <rect key="frame" x="16" y="10" width="288" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="EmM-Dx-5ME"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tofino-Medium" family="Tofino" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BARCODE/BRAND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5t-Kj-KgJ">
+                            <rect key="frame" x="16" y="45" width="130" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="vxN-oS-yNi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tofino-Medium" family="Tofino" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIVISION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu0-Ud-SZL">
+                            <rect key="frame" x="184" y="45" width="120" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Tcu-jJ-q7B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tofino-Medium" family="Tofino" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Tu0-Ud-SZL" firstAttribute="top" secondItem="I5t-Kj-KgJ" secondAttribute="top" id="1Bg-mA-fOf"/>
+                        <constraint firstItem="I5t-Kj-KgJ" firstAttribute="top" secondItem="5y3-lZ-InM" secondAttribute="bottom" constant="14" id="GbF-Vx-SZT"/>
+                        <constraint firstAttribute="trailing" secondItem="Tu0-Ud-SZL" secondAttribute="trailing" constant="16" id="ZTs-GO-Ncn"/>
+                        <constraint firstItem="I5t-Kj-KgJ" firstAttribute="leading" secondItem="5y3-lZ-InM" secondAttribute="leading" id="aiq-Q5-oyS"/>
+                        <constraint firstItem="5y3-lZ-InM" firstAttribute="leading" secondItem="87n-U2-fbd" secondAttribute="leading" constant="16" id="hj2-Te-rEq"/>
+                        <constraint firstItem="5y3-lZ-InM" firstAttribute="top" secondItem="87n-U2-fbd" secondAttribute="top" constant="10" id="sB0-YY-5s7"/>
+                        <constraint firstAttribute="trailing" secondItem="5y3-lZ-InM" secondAttribute="trailing" constant="16" id="tPU-Xk-eEG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="87n-U2-fbd" secondAttribute="bottom" constant="0.5" id="376-sE-IQd"/>
+                <constraint firstItem="87n-U2-fbd" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="KYA-PU-UCT"/>
+                <constraint firstItem="87n-U2-fbd" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="xc8-30-3XK"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="87n-U2-fbd" secondAttribute="trailing" id="zqK-gk-vOv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="headingLabel" destination="5y3-lZ-InM" id="t0b-7h-FxR"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </collectionReusableView>
+    </objects>
+</document>

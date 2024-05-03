@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Bold.ttf">
+            <string>Tofino-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="JWi-wR-a6x">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="hJm-Uy-lIv" customClass="SearchViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jfu-G6-eCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="JjI-2h-Aw9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hJm-Uy-lIv" id="Xzf-YV-XKU"/>
+                                    <outlet property="delegate" destination="hJm-Uy-lIv" id="IkO-Pe-K2R"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdQ-Dg-TH0">
+                                <rect key="frame" x="10" y="808" width="394" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Hvx-UD-cNY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tofino-Bold" family="Tofino" pointSize="16"/>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSearchButtonClick:" destination="hJm-Uy-lIv" eventType="touchUpInside" id="4XZ-fh-FR2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JjI-2h-Aw9" firstAttribute="trailing" secondItem="kA6-J3-Y08" secondAttribute="trailing" id="Dlf-DV-MgV"/>
+                            <constraint firstItem="kA6-J3-Y08" firstAttribute="bottom" secondItem="WdQ-Dg-TH0" secondAttribute="bottom" constant="10" id="RPD-kk-nbD"/>
+                            <constraint firstItem="kA6-J3-Y08" firstAttribute="trailing" secondItem="WdQ-Dg-TH0" secondAttribute="trailing" constant="10" id="l3J-D0-eLE"/>
+                            <constraint firstItem="JjI-2h-Aw9" firstAttribute="leading" secondItem="kA6-J3-Y08" secondAttribute="leading" id="l4D-Hv-y1q"/>
+                            <constraint firstItem="WdQ-Dg-TH0" firstAttribute="top" secondItem="JjI-2h-Aw9" secondAttribute="bottom" constant="10" id="p5B-z8-Oz9"/>
+                            <constraint firstItem="WdQ-Dg-TH0" firstAttribute="leading" secondItem="kA6-J3-Y08" secondAttribute="leading" constant="10" id="qX4-Jo-wO0"/>
+                            <constraint firstItem="JjI-2h-Aw9" firstAttribute="top" secondItem="kA6-J3-Y08" secondAttribute="top" id="zkR-q7-rsX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kA6-J3-Y08"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchButton" destination="WdQ-Dg-TH0" id="FBu-4E-5OT"/>
+                        <outlet property="searchTableView" destination="JjI-2h-Aw9" id="YPM-iK-oaL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aa-pg-Rrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="125.89285714285714"/>
+        </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="jzV-0M-RsS">
+            <objects>
+                <viewController storyboardIdentifier="SearchResultViewController" id="oEx-wM-dJq" customClass="SearchResultViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="smL-HY-0OO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xOk-hE-EeM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8t2-s2-MPb">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oEx-wM-dJq" id="jxT-n8-Tze"/>
+                                    <outlet property="delegate" destination="oEx-wM-dJq" id="wMr-kB-KzG"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="92Y-nA-fzy" firstAttribute="trailing" secondItem="xOk-hE-EeM" secondAttribute="trailing" id="3zN-eY-CsU"/>
+                            <constraint firstItem="xOk-hE-EeM" firstAttribute="top" secondItem="92Y-nA-fzy" secondAttribute="top" id="I0z-jb-ayP"/>
+                            <constraint firstItem="92Y-nA-fzy" firstAttribute="bottom" secondItem="xOk-hE-EeM" secondAttribute="bottom" id="I8p-f8-jlN"/>
+                            <constraint firstItem="xOk-hE-EeM" firstAttribute="leading" secondItem="92Y-nA-fzy" secondAttribute="leading" id="SOA-h6-rO2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="92Y-nA-fzy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7eu-2m-koE">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wOG-jo-wwl"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchResultCollectionView" destination="xOk-hE-EeM" id="oXV-cC-qxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ET4-49-0iu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="133"/>
+        </scene>
+    </scenes>
+</document>

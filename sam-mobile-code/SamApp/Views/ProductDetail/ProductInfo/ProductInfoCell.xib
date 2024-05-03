@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductInfoCell" rowHeight="88" id="KGk-i7-Jjw" customClass="ProductInfoCell" customModule="SAM3App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9p-PL-jzP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCg-55-o62">
+                                <rect key="frame" x="16" y="10" width="288" height="20"/>
+                                <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnT-GA-1SR">
+                                <rect key="frame" x="16" y="40" width="288" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="35325343452345" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-3t-ecO" customClass="CustomTextField" customModule="SAM3App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="288" height="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="dBF-Uw-h4s"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JR6-3t-ecO" secondAttribute="bottom" constant="5" id="27c-ij-vpy"/>
+                                    <constraint firstItem="JR6-3t-ecO" firstAttribute="top" secondItem="dnT-GA-1SR" secondAttribute="top" constant="5" id="Gwd-Lc-dnF"/>
+                                    <constraint firstAttribute="trailing" secondItem="JR6-3t-ecO" secondAttribute="trailing" id="JgA-0r-nXi"/>
+                                    <constraint firstAttribute="height" constant="40" id="NFw-rw-38U"/>
+                                    <constraint firstItem="JR6-3t-ecO" firstAttribute="leading" secondItem="dnT-GA-1SR" secondAttribute="leading" id="iCU-Ze-k1E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dnT-GA-1SR" firstAttribute="leading" secondItem="iCg-55-o62" secondAttribute="leading" id="Bi9-3A-GJl"/>
+                            <constraint firstItem="iCg-55-o62" firstAttribute="top" secondItem="g9p-PL-jzP" secondAttribute="top" constant="10" id="NDo-0s-FqF"/>
+                            <constraint firstAttribute="trailing" secondItem="dnT-GA-1SR" secondAttribute="trailing" constant="16" id="Vu4-2L-eNt"/>
+                            <constraint firstItem="iCg-55-o62" firstAttribute="leading" secondItem="g9p-PL-jzP" secondAttribute="leading" constant="16" id="lfA-Iz-Ugj"/>
+                            <constraint firstAttribute="trailing" secondItem="iCg-55-o62" secondAttribute="trailing" constant="16" id="mbH-Ju-fFZ"/>
+                            <constraint firstItem="dnT-GA-1SR" firstAttribute="top" secondItem="iCg-55-o62" secondAttribute="bottom" constant="10" id="qIX-tl-Idf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="g9p-PL-jzP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FRU-ER-zH7"/>
+                    <constraint firstItem="g9p-PL-jzP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cF4-6i-6Dc"/>
+                    <constraint firstAttribute="trailing" secondItem="g9p-PL-jzP" secondAttribute="trailing" id="ttk-bA-FaS"/>
+                    <constraint firstAttribute="bottom" secondItem="g9p-PL-jzP" secondAttribute="bottom" id="wv6-5U-sjh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="g9p-PL-jzP" id="i7s-l3-vLg"/>
+                <outlet property="editTextField" destination="JR6-3t-ecO" id="pQS-7a-pFC"/>
+                <outlet property="fieldView" destination="dnT-GA-1SR" id="Y5m-HV-OxO"/>
+                <outlet property="leadingConstraint" destination="iCU-Ze-k1E" id="59Q-sC-6ra"/>
+                <outlet property="titleLabel" destination="iCg-55-o62" id="phY-ik-igc"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="110.49107142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

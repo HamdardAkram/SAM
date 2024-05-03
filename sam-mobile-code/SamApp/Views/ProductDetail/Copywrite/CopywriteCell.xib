@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CopywriteCell" rowHeight="92" id="KGk-i7-Jjw" customClass="CopywriteCell" customModule="SamApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0S-sn-c13">
+                        <rect key="frame" x="16" y="10" width="288" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3w-bg-gaU">
+                        <rect key="frame" x="16" y="32.5" width="288" height="49.5"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6HH-JL-3rZ">
+                                <rect key="frame" x="8" y="2" width="272" height="45.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="EgZ-Wb-yA8"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6HH-JL-3rZ" firstAttribute="top" secondItem="i3w-bg-gaU" secondAttribute="top" constant="2" id="c53-Q0-sbW"/>
+                            <constraint firstItem="6HH-JL-3rZ" firstAttribute="leading" secondItem="i3w-bg-gaU" secondAttribute="leading" constant="8" id="czt-r3-Vdg"/>
+                            <constraint firstAttribute="trailing" secondItem="6HH-JL-3rZ" secondAttribute="trailing" constant="8" id="hm6-qd-Gcx"/>
+                            <constraint firstAttribute="bottom" secondItem="6HH-JL-3rZ" secondAttribute="bottom" constant="2" id="hud-MV-C2C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="i3w-bg-gaU" secondAttribute="bottom" constant="10" id="Od0-AZ-Vs3"/>
+                    <constraint firstItem="J0S-sn-c13" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QlU-G5-VTs"/>
+                    <constraint firstItem="i3w-bg-gaU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TL7-mX-YQa"/>
+                    <constraint firstAttribute="trailing" secondItem="J0S-sn-c13" secondAttribute="trailing" constant="16" id="VRN-pN-HWu"/>
+                    <constraint firstAttribute="trailing" secondItem="i3w-bg-gaU" secondAttribute="trailing" constant="16" id="dBG-Eu-5jW"/>
+                    <constraint firstItem="J0S-sn-c13" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rUG-Ba-40R"/>
+                    <constraint firstItem="i3w-bg-gaU" firstAttribute="top" secondItem="J0S-sn-c13" secondAttribute="bottom" constant="6" id="uBH-WU-LO3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="inputFieldView" destination="i3w-bg-gaU" id="YA7-TE-a8U"/>
+                <outlet property="titleLabel" destination="J0S-sn-c13" id="xzf-SY-D5S"/>
+                <outlet property="valueField" destination="6HH-JL-3rZ" id="fGY-ec-lBr"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="154.6875"/>
+        </tableViewCell>
+    </objects>
+</document>

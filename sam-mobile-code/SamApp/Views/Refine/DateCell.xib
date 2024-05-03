@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Regular.ttf">
+            <string>Tofino-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" id="KGk-i7-Jjw" customClass="DateCell" customModule="SAM_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOg-Ke-rlG">
+                        <rect key="frame" x="0.0" y="5" width="320" height="39"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnL-qo-NOj">
+                                <rect key="frame" x="10" y="0.0" width="145" height="39"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender_icon" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-OI-6Nw">
+                                        <rect key="frame" x="116" y="8" width="24" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="T6O-No-ywz"/>
+                                            <constraint firstAttribute="height" constant="23" id="hvO-nf-33O"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="From Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-2a-gcd" customClass="CustomTextField" customModule="SAM_App" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="5" width="125" height="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="W6l-Sg-PnQ"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TwA-2a-gcd" firstAttribute="top" secondItem="dnL-qo-NOj" secondAttribute="top" constant="5" id="0MD-rt-cyg"/>
+                                    <constraint firstAttribute="trailing" secondItem="fdD-OI-6Nw" secondAttribute="trailing" constant="5" id="6LL-Yy-FLo"/>
+                                    <constraint firstAttribute="bottom" secondItem="TwA-2a-gcd" secondAttribute="bottom" constant="5" id="TSn-tI-p8T"/>
+                                    <constraint firstItem="fdD-OI-6Nw" firstAttribute="centerY" secondItem="dnL-qo-NOj" secondAttribute="centerY" id="WnL-Mq-W7u"/>
+                                    <constraint firstAttribute="trailing" secondItem="TwA-2a-gcd" secondAttribute="trailing" constant="10" id="has-Xg-uK1"/>
+                                    <constraint firstItem="TwA-2a-gcd" firstAttribute="leading" secondItem="dnL-qo-NOj" secondAttribute="leading" constant="10" id="sLc-qs-cf8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-G7-Von">
+                                <rect key="frame" x="165" y="0.0" width="145" height="39"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bhl-1o-nJC">
+                                        <rect key="frame" x="116" y="8" width="24" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="Psg-0K-zdU"/>
+                                            <constraint firstAttribute="width" constant="24" id="gGv-0b-NCz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="To Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZQ-Q0-tYN" customClass="CustomTextField" customModule="SAM_App" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="5" width="125" height="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Tofino-Regular" family="Tofino" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="KGk-i7-Jjw" id="7ba-Rl-beA"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OZQ-Q0-tYN" secondAttribute="trailing" constant="10" id="0cy-uU-8VK"/>
+                                    <constraint firstItem="OZQ-Q0-tYN" firstAttribute="leading" secondItem="jbg-G7-Von" secondAttribute="leading" constant="10" id="56u-v7-McQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bhl-1o-nJC" secondAttribute="trailing" constant="5" id="EWj-Cg-6NC"/>
+                                    <constraint firstAttribute="bottom" secondItem="OZQ-Q0-tYN" secondAttribute="bottom" constant="5" id="GEG-ZH-XeW"/>
+                                    <constraint firstItem="Bhl-1o-nJC" firstAttribute="centerY" secondItem="jbg-G7-Von" secondAttribute="centerY" id="PzG-Xe-vPZ"/>
+                                    <constraint firstItem="OZQ-Q0-tYN" firstAttribute="top" secondItem="jbg-G7-Von" secondAttribute="top" constant="5" id="Sw6-CC-LUb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jbg-G7-Von" firstAttribute="top" secondItem="oOg-Ke-rlG" secondAttribute="top" id="0eK-FC-jVb"/>
+                            <constraint firstAttribute="trailing" secondItem="jbg-G7-Von" secondAttribute="trailing" constant="10" id="6UT-KG-D46"/>
+                            <constraint firstItem="dnL-qo-NOj" firstAttribute="top" secondItem="oOg-Ke-rlG" secondAttribute="top" id="Cs6-wG-caD"/>
+                            <constraint firstItem="dnL-qo-NOj" firstAttribute="leading" secondItem="oOg-Ke-rlG" secondAttribute="leading" constant="10" id="DvQ-XE-S4R"/>
+                            <constraint firstItem="jbg-G7-Von" firstAttribute="width" secondItem="dnL-qo-NOj" secondAttribute="width" id="EPy-Rh-Iaz"/>
+                            <constraint firstAttribute="bottom" secondItem="dnL-qo-NOj" secondAttribute="bottom" id="IRC-gX-krE"/>
+                            <constraint firstItem="jbg-G7-Von" firstAttribute="leading" secondItem="dnL-qo-NOj" secondAttribute="trailing" constant="10" id="bCj-hl-Jbl"/>
+                            <constraint firstAttribute="bottom" secondItem="jbg-G7-Von" secondAttribute="bottom" id="jpC-cb-B8r"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="oOg-Ke-rlG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CXm-pO-26L"/>
+                    <constraint firstItem="oOg-Ke-rlG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="FIK-vi-UWF"/>
+                    <constraint firstAttribute="bottom" secondItem="oOg-Ke-rlG" secondAttribute="bottom" id="Lbe-Pt-azJ"/>
+                    <constraint firstAttribute="trailing" secondItem="oOg-Ke-rlG" secondAttribute="trailing" id="cGj-SR-lgf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fromDateView" destination="dnL-qo-NOj" id="p11-5e-1IV"/>
+                <outlet property="fromTextField" destination="TwA-2a-gcd" id="l4b-Xl-JZ1"/>
+                <outlet property="toDateView" destination="jbg-G7-Von" id="3U7-6T-e8h"/>
+                <outlet property="toTextField" destination="OZQ-Q0-tYN" id="a8f-bo-qtn"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="145"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calender_icon" width="23.5" height="22.5"/>
+    </resources>
+</document>
