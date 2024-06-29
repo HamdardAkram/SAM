@@ -97,7 +97,7 @@ class ScanPresenter: ScanPresenterProtocol {
                         session1.product_session_id < session2.product_session_id
                     }
                     
-                    if session?.wrong_code.isEmpty == true {
+                    if session?.wrong_code.Value.isEmpty == true {
                         if (session?.photo_model_date.Value.isEmpty)! && (session?.photo_mannequin_date.Value.isEmpty)! && (session?.photo_still_date.Value.isEmpty)! {
                             message = "No Shot Done"
                             isValidProduct = false
@@ -107,7 +107,7 @@ class ScanPresenter: ScanPresenterProtocol {
                         }
                     }
                     else {
-                        guard let wrongCode = session?.wrong_code else {
+                        guard let wrongCode = session?.wrong_code.Value else {
                             return
                         }
                         if Int(wrongCode)! < 99 {

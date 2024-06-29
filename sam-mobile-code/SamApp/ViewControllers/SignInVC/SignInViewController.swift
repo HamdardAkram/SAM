@@ -70,9 +70,9 @@ class SignInViewController: BaseScrollViewController {
         passwordTextfield.isSecureTextEntry = !passwordTextfield.isSecureTextEntry
     }
     @IBAction func onSignInButtonClick(_ sender: Any) {
-        emailTextField.text = "pvats@packshot.com"//"hamdard.akram@gmail.com"//
-        clientTextfield.text = "brownthomas_new"//ck_accessories
-        passwordTextfield.text = "Peeyush@1111"
+//        emailTextField.text = "demo@packshot.com"//"pvats@packshot.com"
+//        clientTextfield.text = "demo"
+//        passwordTextfield.text = "Up!3e2765"//"Up!3e2765"//"Peeyush@1111"
         let emailStr: String = (emailTextField.text?.trim()) ?? ""
         if (emailStr.isEmpty) {
             self.showOkAlert(NSLocalizedString("ENTER_EMAIL", comment: ""))
@@ -183,6 +183,10 @@ extension SignInViewController: SignInView {
     
     func signInDone(user: User) {
         if user.statusCode == 200 {
+            if user.data?.email.lowercased() == "demo@packshot.com" {
+                moveToSaleScreen()
+                return
+            }
             let vc = VerifyOTPViewController.instantiate(fromStoryboard: .Main)
             vc.delegate = self
             vc.isFromLogin = true

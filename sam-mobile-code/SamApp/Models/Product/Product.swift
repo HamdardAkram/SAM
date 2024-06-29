@@ -78,6 +78,11 @@ struct ProductData: Decodable {
     var image_dir_year: String
     var image_dir_month: String
     var images: [ProductImages]
+    var is_sample: Int
+    var is_luxury: Int
+    var requires_mannequin: Int
+    var extra_details: Int
+    var wrong_code: VariacType
     
     private enum CodingKeys: String, CodingKey {
         case _id = "_id"
@@ -103,6 +108,11 @@ struct ProductData: Decodable {
         case image_dir_year
         case image_dir_month
         case images
+        case is_sample
+        case is_luxury
+        case requires_mannequin
+        case extra_details
+        case wrong_code
     }
     
     init(from decoder: Decoder) throws {
@@ -152,6 +162,12 @@ struct ProductData: Decodable {
         image_dir_year = try (container.decodeIfPresent(String.self, forKey: .image_dir_year) ?? "")
         image_dir_month = try (container.decodeIfPresent(String.self, forKey: .image_dir_month) ?? "")
         images = try (container.decodeIfPresent([ProductImages].self, forKey: .images) ?? [])
+        
+        is_sample = try (container.decodeIfPresent(Int.self, forKey: .is_sample) ?? 0)
+        is_luxury = try (container.decodeIfPresent(Int.self, forKey: .is_luxury) ?? 0)
+        requires_mannequin = try (container.decodeIfPresent(Int.self, forKey: .requires_mannequin) ?? 0)
+        extra_details = try (container.decodeIfPresent(Int.self, forKey: .extra_details) ?? 0)
+        wrong_code = try (container.decodeIfPresent(VariacType.self, forKey: .wrong_code) ?? VariacType.string(""))
     }
 }
 
@@ -203,7 +219,7 @@ struct ProductSession: Codable {
     var user_rights: String
     var plugin: String
     
-    var wrong_code: String
+    var wrong_code: VariacType
     var wrongproduct_coment: String
     var is_model_manager: String
     
@@ -337,7 +353,7 @@ struct ProductSession: Codable {
         still_stylist_name = (try container.decodeIfPresent(String.self, forKey: .still_stylist_name)) ?? ""
         model_stylist_name = (try container.decodeIfPresent(String.self, forKey: .model_stylist_name)) ?? ""
         still_photographer = (try container.decodeIfPresent(String.self, forKey: .still_photographer)) ?? ""
-        wrong_code = (try container.decodeIfPresent(String.self, forKey: .wrong_code)) ?? ""
+        wrong_code = (try container.decodeIfPresent(VariacType.self, forKey: .wrong_code)) ?? VariacType.string("")
         wrongproduct_coment = (try container.decodeIfPresent(String.self, forKey: .wrongproduct_coment)) ?? ""
         is_model_manager = (try container.decodeIfPresent(String.self, forKey: .is_model_manager)) ?? ""
     }

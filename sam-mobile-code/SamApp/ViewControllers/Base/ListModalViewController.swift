@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ListModalViewControllerDelegate: class {
+protocol ListModalViewControllerDelegate: AnyObject {
     associatedtype T
     
     func didSelectRoleAndPhotographyType(value: T, fromViewController vc: UIViewController)
@@ -19,6 +19,7 @@ class ListModalViewController<T: CustomStringConvertible, D: ListModalViewContro
 
     fileprivate var tableView: UITableView!
     var currentSelectedIndex: Int = 0
+    var popUpType: Int = 0
     
     weak var delegate: D?
     

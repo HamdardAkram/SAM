@@ -530,7 +530,9 @@ extension AVCaptureDevice {
     func setLight(on: Bool) throws {
         try self.lockForConfiguration()
         if on {
-            try self.setTorchModeOn(level: 1)
+            if self.isFlashAvailable {
+                try self.setTorchModeOn(level: 1)
+            }
         }
         else {
             self.torchMode = .off

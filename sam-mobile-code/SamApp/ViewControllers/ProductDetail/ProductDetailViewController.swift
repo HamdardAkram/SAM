@@ -52,7 +52,7 @@ class ProductDetailViewController: UIViewController {
         
         if detailTableView.tableHeaderView == nil {
             detailTableView.tableHeaderView = UIView()
-            detailTableView.tableHeaderView?.backgroundColor = .green
+            detailTableView.tableHeaderView?.backgroundColor = .black
         }
             
         if let thv = detailTableView.tableHeaderView {
@@ -155,32 +155,32 @@ class ProductDetailViewController: UIViewController {
         fetchProductImages()
     }
     
-    func layoutTableHeaderView(images: [ProductImages]) {
-     
-        guard let headerView = self.detailTableView.tableHeaderView else { return }
-        headerView.translatesAutoresizingMaskIntoConstraints = false
-         
-        //let headerWidth = headerView.bounds.size.height
-        let metricDict = ["viewHeight": images.count > 0 ? 294 : 100]
-        let temporaryWidthConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[headerView(viewHeight)]", metrics: metricDict, views: ["headerView": headerView])
-        
-        headerView.addConstraints(temporaryWidthConstraints)
-         
-        headerView.setNeedsLayout()
-        headerView.layoutIfNeeded()
-         
-        let headerSize = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        let height = headerSize.height
-        var frame = headerView.frame
-         
-        frame.size.height = height
-        headerView.frame = frame
-         
-        self.detailTableView.tableHeaderView = headerView
-         
-        headerView.removeConstraints(temporaryWidthConstraints)
-        headerView.translatesAutoresizingMaskIntoConstraints = true
-    }
+//    func layoutTableHeaderView(images: [ProductImages]) {
+//     
+//        guard let headerView = self.detailTableView.tableHeaderView else { return }
+//        headerView.translatesAutoresizingMaskIntoConstraints = false
+//         
+//        //let headerWidth = headerView.bounds.size.height
+//        let metricDict = ["viewHeight": images.count > 0 ? 294 : 100]
+//        let temporaryWidthConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[headerView(viewHeight)]", metrics: metricDict, views: ["headerView": headerView])
+//        
+//        headerView.addConstraints(temporaryWidthConstraints)
+//         
+//        headerView.setNeedsLayout()
+//        headerView.layoutIfNeeded()
+//         
+//        let headerSize = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+//        let height = headerSize.height
+//        var frame = headerView.frame
+//         
+//        frame.size.height = height
+//        headerView.frame = frame
+//         
+//        self.detailTableView.tableHeaderView = headerView
+//         
+//        headerView.removeConstraints(temporaryWidthConstraints)
+//        headerView.translatesAutoresizingMaskIntoConstraints = true
+//    }
     
     func addNewOutfit(productInfo: ProductDetails) {
         let user = getLoggedInUser()
@@ -399,7 +399,7 @@ extension ProductDetailViewController: ProductPageDetailView {
             return
         }
         if adapter.productDetail?.data.count ?? 0 > selectedProductIndex {
-            self.layoutTableHeaderView(images: productImages)
+            //self.layoutTableHeaderView(images: productImages)
             self.detailAdapter.productDetail?.data[selectedProductIndex].images = productImages
             if let headerView = self.detailTableView.tableHeaderView as? DetailHeaderView {
                 headerView.productData = self.detailAdapter.productDetail?.data[selectedProductIndex]

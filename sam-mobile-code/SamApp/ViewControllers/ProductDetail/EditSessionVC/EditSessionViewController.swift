@@ -303,7 +303,7 @@ extension EditSessionViewController: PickerViewAdapterDelegate {
     func didTapOnRow(index: Int) {
         if self.selectedTextField?.tag != 4 {
             reasonId = index
-            self.editSessionAdapter.sessionObject?.wrong_code = String(reasonId)
+            self.editSessionAdapter.sessionObject?.wrong_code = VariacType.string(String(reasonId))
         }
         else {
             self.editSessionAdapter.sessionObject?.model_name = self.pickerAdapter.itemList[index]
@@ -314,7 +314,7 @@ extension EditSessionViewController: PickerViewAdapterDelegate {
     func didTapDone(index: Int) {
         if self.selectedTextField?.tag != 4 {
             reasonId = index
-            self.editSessionAdapter.sessionObject?.wrong_code = String(reasonId)
+            self.editSessionAdapter.sessionObject?.wrong_code = VariacType.string(String(reasonId))
         }
         else {
             self.editSessionAdapter.sessionObject?.model_name = self.pickerAdapter.itemList[index]
@@ -325,7 +325,7 @@ extension EditSessionViewController: PickerViewAdapterDelegate {
     
     func didTapCancel() {
         if self.selectedTextField?.tag != 4 {
-            self.editSessionAdapter.sessionObject?.wrong_code = "0"
+            self.editSessionAdapter.sessionObject?.wrong_code = VariacType.string("0")
         }
         else {
             self.editSessionAdapter.sessionObject?.model_name = ""

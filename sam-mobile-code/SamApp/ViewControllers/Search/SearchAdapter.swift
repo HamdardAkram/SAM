@@ -54,7 +54,7 @@ class SearchAdapter: NSObject {
         
         let searchList3 = [SectionItem(itemName: "Still stylist", itemValue: ""), SectionItem(itemName: "Model stylist", itemValue: ""), SectionItem(itemName: "Mannaquin stylist", itemValue: ""), SectionItem(itemName: "Still photographer", itemValue: ""), SectionItem(itemName: "Model photographer", itemValue: ""), SectionItem(itemName: "Mannaquin photographer", itemValue: "")]
         
-        let searchType1 = RefineSection(isCollapsible: true, isCollapsed: true, sectionTitle: "Prodcut Attributes", sectionDesc: "Enter search value", items: section1Criteria)
+        let searchType1 = RefineSection(isCollapsible: true, isCollapsed: true, sectionTitle: "Product Attributes", sectionDesc: "Enter search value", items: section1Criteria)
         let searchType2 = RefineSection(isCollapsible: true, isCollapsed: true, sectionTitle: "Workflow dates", sectionDesc: "Enter search value", items: searchList2)
         let searchType3 = RefineSection(isCollapsible: true, isCollapsed: true, sectionTitle: "Photographer / Stylist", sectionDesc: "Enter search value", items: searchList3)
         

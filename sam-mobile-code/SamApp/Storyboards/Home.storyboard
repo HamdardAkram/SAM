@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYJ-tx-0zt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYJ-tx-0zt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar View Controller-->
         <scene sceneID="nGU-yO-V7F">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewController" id="BYJ-tx-0zt" customClass="TabBarViewController" customModule="SamApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="BYJ-tx-0zt" customClass="TabBarViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="R68-w8-UIk">
@@ -20,6 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="6JL-hy-uep" kind="relationship" relationship="viewControllers" id="Pof-ck-WLg"/>
+                        <segue destination="i1n-dY-BTT" kind="relationship" relationship="viewControllers" id="GFc-i8-fnW"/>
                         <segue destination="Ni7-S4-yeq" kind="relationship" relationship="viewControllers" id="B1y-Kg-E5g"/>
                         <segue destination="yyQ-T7-Sw5" kind="relationship" relationship="viewControllers" id="1bp-Sg-6JS"/>
                         <segue destination="jv2-KC-lVt" kind="relationship" relationship="viewControllers" id="a61-dg-pgL"/>
@@ -37,7 +38,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="K2X-ch-v76">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -92,12 +93,12 @@
         <!--Profile-->
         <scene sceneID="CBu-YC-xkU">
             <objects>
-                <navigationController interfaceStyle="dark" id="jv2-KC-lVt" sceneMemberID="viewController">
+                <navigationController id="jv2-KC-lVt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="account" id="v5b-bg-m6x"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="IyG-uP-IBd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -112,12 +113,12 @@
         <!--Barcode-->
         <scene sceneID="2rv-eD-GzY">
             <objects>
-                <navigationController interfaceStyle="dark" id="Ni7-S4-yeq" sceneMemberID="viewController">
+                <navigationController id="Ni7-S4-yeq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Barcode" image="barcode_icon" id="u5W-ED-xy8"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="vfV-rm-8Wy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -131,12 +132,12 @@
         <!--Scan Product-->
         <scene sceneID="vUS-Kw-Zjv">
             <objects>
-                <navigationController interfaceStyle="dark" id="yyQ-T7-Sw5" sceneMemberID="viewController">
+                <navigationController id="yyQ-T7-Sw5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan Product" image="scan_icon" id="a6A-F9-Agd"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="oJB-VE-932">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -146,6 +147,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0O-2o-S09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="991" y="-713"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="rvj-bp-Qi7">
+            <objects>
+                <navigationController id="i1n-dY-BTT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" id="FkZ-NQ-90H"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jGz-AG-EdV">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DSj-lQ-dLS" kind="relationship" relationship="rootViewController" id="zM1-75-ONP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9N-Uv-MSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610" y="-1386"/>
+        </scene>
+        <!--DashboardViewController-->
+        <scene sceneID="Dud-yx-Sft">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DashboardViewController" storyboardName="TabBarVC" referencedIdentifier="DashboardViewController" id="DSj-lQ-dLS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u8o-bq-DVN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pk-JP-9s9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="-1386"/>
         </scene>
     </scenes>
     <resources>

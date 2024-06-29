@@ -19,6 +19,9 @@ class ProductInfoAdapter: NSObject {
     
     var productInfo: ProductData? {
         didSet {
+            if let headerView = self.infoTableView.tableHeaderView as? InfoHeaderView {
+                headerView.productInfo = productInfo
+            }
             self.infoTableView.reloadData()
         }
     }
@@ -41,11 +44,17 @@ class ProductInfoAdapter: NSObject {
         
         self.infoTableView.delegate = self
         self.infoTableView.dataSource = self
-        self.infoTableView.tableHeaderView = getHeaderView()
+        
         self.infoTableView.tableFooterView = UIView()
         self.registerCells()
         
         let user = getLoggedInUser()
+        if user?.client_name.lowercased() == "bijenkorf" {
+            self.infoTableView.tableHeaderView = getHeaderView()
+        }
+        else {
+            self.infoTableView.tableHeaderView = UIView(frame: .zero)            
+        }
         guard let attributes = user?.productAttributes else {
             return
         }

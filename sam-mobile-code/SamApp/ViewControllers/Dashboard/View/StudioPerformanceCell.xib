@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tofino Bold.ttf">
+            <string>Tofino-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudioPerformanceCell" rowHeight="582" id="KGk-i7-Jjw" customClass="StudioPerformanceCell" customModule="SAM3App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="582"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="582"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJu-gm-1Hv">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="559"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z8I-r3-ch2">
+                                <rect key="frame" x="73" y="20" width="251" height="32"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="sv7-ja-Ux3"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Daily"/>
+                                    <segment title="Monthly"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Ooy-Qn-dl6"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Studio Performance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECT-SQ-7VJ">
+                                <rect key="frame" x="16" y="71" width="173" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Tofino-Bold" family="Tofino" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MPq-bE-JxK">
+                                <rect key="frame" x="8" y="110.33333333333331" width="381" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="F4F-aj-57S"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vj2-B3-U5W">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="3gC-hp-Lcq"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="snm-uh-zlp"/>
+                                </connections>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naf-cY-6Wq">
+                                <rect key="frame" x="16" y="240.33333333333337" width="373" height="212"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRx-Cl-Nit" customClass="LineChart" customModule="SAM3App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="212"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LRx-Cl-Nit" firstAttribute="height" secondItem="naf-cY-6Wq" secondAttribute="height" id="3mB-gP-Sqx"/>
+                                    <constraint firstItem="LRx-Cl-Nit" firstAttribute="top" secondItem="naf-cY-6Wq" secondAttribute="top" id="OW5-nh-BJ2"/>
+                                    <constraint firstAttribute="height" constant="212" id="PlI-qS-Xca"/>
+                                    <constraint firstItem="LRx-Cl-Nit" firstAttribute="width" secondItem="naf-cY-6Wq" secondAttribute="width" id="UHT-M0-yRz"/>
+                                    <constraint firstItem="LRx-Cl-Nit" firstAttribute="leading" secondItem="naf-cY-6Wq" secondAttribute="leading" id="cIn-0t-Uhc"/>
+                                    <constraint firstAttribute="bottom" secondItem="LRx-Cl-Nit" secondAttribute="bottom" id="dP3-6q-iqO"/>
+                                    <constraint firstAttribute="trailing" secondItem="LRx-Cl-Nit" secondAttribute="trailing" id="p40-hd-Hb9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="373" id="zyT-gv-y6T"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z8I-r3-ch2" firstAttribute="centerX" secondItem="WJu-gm-1Hv" secondAttribute="centerX" id="8EE-E4-Y3k"/>
+                            <constraint firstItem="ECT-SQ-7VJ" firstAttribute="top" secondItem="Z8I-r3-ch2" secondAttribute="bottom" constant="20" id="Bcj-u3-p3E"/>
+                            <constraint firstItem="naf-cY-6Wq" firstAttribute="trailing" secondItem="MPq-bE-JxK" secondAttribute="trailing" id="Lj8-2O-F9f"/>
+                            <constraint firstItem="MPq-bE-JxK" firstAttribute="leading" secondItem="WJu-gm-1Hv" secondAttribute="leading" constant="8" id="PR6-Qf-ra9"/>
+                            <constraint firstItem="MPq-bE-JxK" firstAttribute="top" secondItem="ECT-SQ-7VJ" secondAttribute="bottom" constant="16" id="RsS-tG-EPH"/>
+                            <constraint firstItem="Z8I-r3-ch2" firstAttribute="top" secondItem="WJu-gm-1Hv" secondAttribute="top" constant="20" id="Sdb-ve-LEy"/>
+                            <constraint firstItem="naf-cY-6Wq" firstAttribute="trailing" secondItem="WJu-gm-1Hv" secondAttribute="trailingMargin" id="Vsb-Bp-EPN"/>
+                            <constraint firstItem="naf-cY-6Wq" firstAttribute="top" secondItem="MPq-bE-JxK" secondAttribute="bottom" constant="20" id="bWT-ta-Dr5"/>
+                            <constraint firstItem="ECT-SQ-7VJ" firstAttribute="leading" secondItem="WJu-gm-1Hv" secondAttribute="leading" constant="16" id="eoz-Ox-NhY"/>
+                            <constraint firstItem="naf-cY-6Wq" firstAttribute="leading" secondItem="WJu-gm-1Hv" secondAttribute="leading" constant="16" id="h34-wk-BFn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="WJu-gm-1Hv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0mb-BC-eZK"/>
+                    <constraint firstItem="WJu-gm-1Hv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BUS-0y-hfk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WJu-gm-1Hv" secondAttribute="bottom" constant="12" id="QC7-wp-oJs"/>
+                    <constraint firstAttribute="trailing" secondItem="WJu-gm-1Hv" secondAttribute="trailing" id="x28-XO-D5W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="colorCollectionView" destination="MPq-bE-JxK" id="GGx-eN-jM6"/>
+                <outlet property="lineChart" destination="LRx-Cl-Nit" id="cnN-NB-eZF"/>
+                <outlet property="segmentControl" destination="Z8I-r3-ch2" id="YAa-Sf-new"/>
+            </connections>
+            <point key="canvasLocation" x="-28.244274809160306" y="171.83098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

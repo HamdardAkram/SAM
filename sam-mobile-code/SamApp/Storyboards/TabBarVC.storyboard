@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Dashboard-->
+        <scene sceneID="RxX-0N-Hod">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" title="Dashboard" id="D3d-Ri-k53" customClass="DashboardViewController" customModule="SAM3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MXR-tM-eD3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9gk-t5-pJb">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="D3d-Ri-k53" id="4UD-9a-oUh"/>
+                                    <outlet property="delegate" destination="D3d-Ri-k53" id="nJa-jU-bF1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="09b-lX-VLg"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="09b-lX-VLg" firstAttribute="bottom" secondItem="9gk-t5-pJb" secondAttribute="bottom" id="Dma-6C-A6v"/>
+                            <constraint firstItem="9gk-t5-pJb" firstAttribute="top" secondItem="09b-lX-VLg" secondAttribute="top" id="M5d-pH-SLh"/>
+                            <constraint firstItem="9gk-t5-pJb" firstAttribute="leading" secondItem="09b-lX-VLg" secondAttribute="leading" id="lAF-EF-XCG"/>
+                            <constraint firstItem="09b-lX-VLg" firstAttribute="trailing" secondItem="9gk-t5-pJb" secondAttribute="trailing" id="vdD-5s-6Vl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dashboardTableView" destination="9gk-t5-pJb" id="Wqb-Ds-dLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDo-Oq-duT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="-683"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tWc-B6-fBY">
             <objects>
@@ -17,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-NW-DBC">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oqq-zS-XCD">
                                     <size key="itemSize" width="50" height="50"/>
@@ -32,6 +66,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="e6z-CP-CAL"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="e6z-CP-CAL" firstAttribute="bottom" secondItem="ixG-NW-DBC" secondAttribute="bottom" id="5eA-ho-hOV"/>
@@ -39,7 +74,6 @@
                             <constraint firstItem="e6z-CP-CAL" firstAttribute="trailing" secondItem="ixG-NW-DBC" secondAttribute="trailing" id="IRQ-HO-VuS"/>
                             <constraint firstItem="ixG-NW-DBC" firstAttribute="leading" secondItem="e6z-CP-CAL" secondAttribute="leading" id="r6Q-mV-m47"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="e6z-CP-CAL"/>
                     </view>
                     <navigationItem key="navigationItem" id="6IU-Io-i2d">
                         <barButtonItem key="backBarButtonItem" title="Back" id="bYP-BZ-Wac"/>
@@ -64,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9eR-dQ-1pe">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -73,6 +107,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="D4o-Bn-TKY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="D4o-Bn-TKY" firstAttribute="bottom" secondItem="9eR-dQ-1pe" secondAttribute="bottom" id="LhC-rd-Z2z"/>
@@ -80,7 +115,6 @@
                             <constraint firstItem="9eR-dQ-1pe" firstAttribute="top" secondItem="D4o-Bn-TKY" secondAttribute="top" id="gmf-Id-lbY"/>
                             <constraint firstItem="D4o-Bn-TKY" firstAttribute="trailing" secondItem="9eR-dQ-1pe" secondAttribute="trailing" id="sw2-8k-uhg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="D4o-Bn-TKY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fM6-07-FcA">
                         <barButtonItem key="backBarButtonItem" title="Back" id="u6D-0A-Eeo"/>
@@ -100,8 +134,8 @@
                     <view key="view" contentMode="scaleToFill" id="2Eg-xF-B0t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cdU-kV-MDY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="view" destination="2Eg-xF-B0t" id="5gm-ty-Gkb"/>
@@ -120,7 +154,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-ch-c5e">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -129,6 +163,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6V5-Yv-KZ7"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vlE-ch-c5e" firstAttribute="leading" secondItem="6V5-Yv-KZ7" secondAttribute="leading" id="LeW-hS-cN5"/>
@@ -136,7 +171,6 @@
                             <constraint firstItem="6V5-Yv-KZ7" firstAttribute="bottom" secondItem="vlE-ch-c5e" secondAttribute="bottom" id="nqh-sH-SgR"/>
                             <constraint firstItem="6V5-Yv-KZ7" firstAttribute="trailing" secondItem="vlE-ch-c5e" secondAttribute="trailing" id="pL1-Ss-crk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6V5-Yv-KZ7"/>
                     </view>
                     <navigationItem key="navigationItem" id="LDZ-Gb-FfZ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="7ag-Ew-991"/>

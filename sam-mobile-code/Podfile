@@ -17,6 +17,8 @@ target 'SamApp' do
   pod 'SKPhotoBrowser'
   pod 'SDWebImage', '~> 5.0'
   pod 'Firebase/Crashlytics'
+  pod 'PieCharts'
+  pod 'SimpleCharts'
 
   target 'SamAppTests' do
     inherit! :search_paths

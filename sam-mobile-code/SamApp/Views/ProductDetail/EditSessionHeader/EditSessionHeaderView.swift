@@ -51,7 +51,7 @@ class EditSessionHeaderView: UITableViewHeaderFooterView {
         }
         self.reasonInputField.inputView = self.headerDelegate?.getPickerView()
         self.reasonInputField.inputAccessoryView = self.headerDelegate?.getPickerView().toolbar
-        self.reasonInputField.text = reasonAsPerWrongCode(code: session?.wrong_code ?? "0")
+        self.reasonInputField.text = reasonAsPerWrongCode(code: session?.wrong_code.Value ?? "")
         
         self.sessionIdLabel.text = "Session ID"
         self.sessionIdField.text = String(session?.product_session_id ?? 0)

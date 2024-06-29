@@ -78,7 +78,8 @@ class ProductDetailAdapter: NSObject {
         self.detailTableView.delegate = self
         self.detailTableView.dataSource = self
         self.detailTableView.tableHeaderView = getHeaderView()
-        self.detailTableView.tableFooterView = UIView()//getFooterView()
+        self.detailTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
+
         self.detailTableView.isEditing = true
         self.detailTableView.allowsSelectionDuringEditing = true
 

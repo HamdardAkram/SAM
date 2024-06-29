@@ -14,7 +14,8 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 10
         self.translatesAutoresizingMaskIntoConstraints = false
         
         self.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width - 20).isActive = true

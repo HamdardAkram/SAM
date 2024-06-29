@@ -85,7 +85,7 @@ class NetworkingClient: Networking {
         else {
             let jsonData = try! JSONSerialization.data(withJSONObject: params, options: [])
             let json = try! JSONSerialization.jsonObject(with: jsonData, options: [])
-            print(json)
+            print("Request data = ", json)
             request.httpBody = jsonData
         }
         

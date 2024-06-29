@@ -42,11 +42,10 @@ class DetailHeaderView: UIView {
         
         registerCells()
         
-        if let fl = photoCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            fl.scrollDirection = .horizontal
-            fl.estimatedItemSize = CGSize(width: 1, height: 1)
-        }
-
+//        if let fl = photoCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+//            fl.scrollDirection = .horizontal
+//            fl.estimatedItemSize = CGSize(width: 1, height: 1)
+//        }
     }
     
     @objc func infoRowClicked() {
@@ -57,8 +56,6 @@ class DetailHeaderView: UIView {
 fileprivate extension DetailHeaderView {
     
     func registerCells() {
-        
-        
         let photoNib = UINib.init(nibName: "PhotoCollectionViewCell", bundle: Bundle.main)
         self.photoCollectionView.register(photoNib, forCellWithReuseIdentifier: "PhotoCollectionViewCell")
     }
@@ -94,7 +91,7 @@ extension DetailHeaderView: UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 160, height: 250)
+        return CGSize(width: collectionView.frame.width - 80, height: collectionView.frame.width - 80)
     }
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        
